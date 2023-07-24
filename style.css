@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Orbit', sans-serif;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    border: .5px solid white;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    border: .5px solid white;
+}
+
+option {
+    font-family: 'Orbit', sans-serif;
+    background-color: transparent;
+    color: white;
+    border: .5px solid white;
+}
+
+button {
+    font-family: 'Orbit', sans-serif;
+    background-color: transparent;
+    color: white;
+    border: .5px solid white;
+    font-size: large;
+    transition: 0.3s ease
+}
+
+button:hover {
+    cursor: pointer;
+    font-family: 'Orbit', sans-serif;
+    background-color: white;
+    color: #141414;
+    border: .5px solid white;
+    font-size: large
+}

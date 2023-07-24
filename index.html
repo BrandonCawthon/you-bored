@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you bored?</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js').then((registration) => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }).catch((error) => {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+    <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bored.png" type="image/x-icon">
+</head>
+
+<body>
+    <center>
+        <h1>are you bored?</h1>
+        <h3>generate some random activities to do!</h3>
+        <br>
+        <div>
+            <h2>Filters:</h2>
+            <label for="type">Type: </label>
+            <select id="type">
+                <option value="">All</option>
+                <option value="education">Educational</option>
+                <option value="recreational">Recreational</option>
+                <option value="social">Social</option>
+                <option value="diy">DIY</option>
+                <option value="charity">Charity</option>
+                <option value="cooking">Cooking</option>
+                <option value="music">Music</option>
+                <option value="busywork">Busywork</option>
+            </select><br><br>
+
+            <label for="participants">Number of Participants</label>
+            <input type="number" id="participants" min="0" max="10">
+        </div>
+        <br>
+        <button id="refresh">Generate</button><br><br>
+        <hr style="width: 60%">
+        <div id="result">
+
+        </div>
+    </center>
+</body>
+
+</html>

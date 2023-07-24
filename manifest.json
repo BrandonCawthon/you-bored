@@ -1,0 +1,15 @@
+{
+    "name": "You Bored?",
+    "short_name": "Bored App",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#008080",
+    "icons": [
+        {
+            "src": "bored.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}
